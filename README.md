@@ -1,13 +1,38 @@
 # Forza Shift Light (WLED)
 
-This python script reads Forza telemetry and drives a WLED LED strip in realtime mode as a shift light.
+Simple RPM shift light for Forza Horizon / Motorsport using UDP telemetry + WLED.
+
+The app listens to game telemetry and lights up configurable LED zones when RPM reaches a defined threshold.
+
+Built with Python + GTK4 + Libadwaita.
+
+![Screenshot](image.png)
 
 ---
 
-## What it does
+## Features
 
-- Listens to Forza UDP telemetry
-- Reads RPM and max RPM
-- Calculates RPM ratio
-- Sends LED data to WLED
-- Turns LEDs on/off based on a set shift threshold (e.g. 85%)
+- Linux native GTK4 interface
+- Multiple WLED device support
+- Configurable LED zones
+- Real-time settings adjustment
+
+---
+
+## Requirements
+
+- Linux
+- Python 3.10+
+- GTK4
+- Libadwaita
+- WLED with UDP Realtime enabled
+
+---
+
+## Installing Dependencies
+
+### Arch Linux
+
+```bash
+sudo pacman -S python python-gobject gtk4 libadwaita
+```
