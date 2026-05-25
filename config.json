@@ -1,0 +1,45 @@
+{
+    "shift_threshold": 0.85,
+    "forza_port": 8000,
+    "keepalive_interval": 0.5,
+    "devices": [
+        {
+            "name": "Desk",
+            "ip": "192.168.0.121",
+            "port": 21324,
+            "total_leds": 47,
+            "ranges": [
+                [
+                    [
+                        18,
+                        30
+                    ],
+                    [
+                        255,
+                        20,
+                        0
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "Monitor",
+            "ip": "192.168.0.122",
+            "port": 21324,
+            "total_leds": 130,
+            "ranges": [
+                [
+                    [
+                        66,
+                        125
+                    ],
+                    [
+                        255,
+                        20,
+                        0
+                    ]
+                ]
+            ]
+        }
+    ]
+}
